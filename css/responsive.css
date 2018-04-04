@@ -1,0 +1,44 @@
+/* ---------------------
+  Responsive Style
+    - for Laptop
+    - for Tablet
+    - for SmartPhone
+
+--------------------- */
+/* =====================
+  for Laptop
+===================== */
+@media (min-width:992px) {
+
+}
+
+/* =====================
+  for Tablet
+===================== */
+@media (min-width:768px) {
+
+}
+/* =====================
+  for SmartPhone
+===================== */
+.pc-only {
+  display: block;
+}
+.sp-only {
+  display: none;
+}
+@media (max-width:576px) {
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  p {
+    line-height: 1.5875rem;
+    font-size: 1.0rem;
+  }
+  td a {
+    font-size: 0.9rem;
+  }
+}

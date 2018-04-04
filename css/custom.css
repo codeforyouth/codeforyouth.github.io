@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* ---------------------
+    - Color & Element
+    - Common Part
+    - CCC(Choi Choi Custom)
+--------------------- */
+
+/* =====================
+  Color & Element
+===================== */
+.young-bamboo-bg {
+  background-color: #68be8d;
+}
+.young-bamboo {
+  color: #68be8d;
+}
+.btn-green {
+    color: #fff;
+    border-color: #68be8d;
+    background-color: #68be8d;
+    box-shadow: none;
+}
+p {
+  line-height: 1.875rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 1.1px;
+  font-family: 'Noto Sans JP';
+}
+/* =====================
+  Common part
+===================== */
+.section-title {
+  position: relative;
+}
+.section-title:after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #68be8d;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: -20px;
+}
+.navbar {
+  margin-bottom: 0 !important;
+}
+section.gray {
+  background: #f9fafc;
+  padding-bottom: 1.5rem!important;
+  padding-top: 1.5rem!important;
+}
+/* =====================
+  CCC(Choi Choi Custom)
+===================== */
+/* top */
+section#top {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background: url(../images/top-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+section#top::before {
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .8;
+  background: #10732d;
+}
+/* member */
+section#member {
+  padding-bottom: 1.5rem!important;
+}
+.avatar {
+  max-width: 80px;
+  overflow: hidden;
+}
+/* blog */
+td a {
+  text-align: center;
+}
+/* contact */
+div.iframeWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+div.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* =====================
+  Responsive Style
+===================== */
+@media (400) {
+
+}

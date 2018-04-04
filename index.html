@@ -1,231 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
-
+    <title>Code for Youth</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Code for Youth</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/round-about.css" rel="stylesheet">
-
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
-
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons.ico/favicon-16x16.png">
+    <link rel="manifest" href="images/icons.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icons.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
   </head>
-
   <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Code for Youth</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Member</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark young-bamboo-bg mb-4">
+      <img src="images/logo/logo_hr_t_white.png" alt="Code for Youth Logo" class="mr-4" height="60">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ml-auto align-self-right" id="navbarNavDropdown-3">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#member">Member</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-      <div class="col-lg-12">
-        <img src="imgs/logo.jpg" alt="" style="width:100%;">
-      </div>
-      <!-- Introduction Row -->
-      <h1 class="my-4">
-        About
-      </h1>
-
-        <h4>
-          「CivicTech」とは
-        </h4>
-          「CivicTech」はCivic（市民の）とTech（テクノロジー）を合わせた造語で、「テクノロジーを用いて、身のまわりの課題を、自分たち自身で解決しよう」という思想や活動を表した言葉です。<br>
-          現在、「Code for Japan」を中心として、こうした「CivicTech」で社会を変えていこうとするBrigadeと呼ばれる団体が全国各地に存在しています。
-          <br>
-          <br>
-        <h4>
-          「Code for Youth」とは
-        </h4>
-          2017年9月のCode for Japan Summit2017で立ち上がったYouthなシビックテックコミュニティです。<br><br>
-          
-          日本各地で広まりを見せるCivicTech、その活動に参加する若者の数も少しずつですが年々増えてきています。しかしながら、漠然と興味はあるものの周りとの温度差に慣れなかったり何から初めていいのか分からず活動につながらないことも多くあります。<br><br>
-          
-          "Code for Youth"は、イベントを通してそのような若者がCivicTechに触れる機会を作り、各地のcodefor Brigadeにつなげることで、CivicTechに関わる若者をより一層増やすことを目的として活動をしています。<br><br>
-      
-      <!-- Team Members Row -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="my-4">Member</h1>
-          Code for Youthの運営にかかわるメンバーです。ほとんどがCivicTechにかかわる学生で構成されています。<br><br>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/saito_takatoshi.jpg" alt="" height="200" width="200">
-          <h4>斎藤 孝俊 
-            <small>Takatoshi Saito</small>
-          </h4>
-          <p>
-            神戸大学5年生<br>
-            株式会社LOPインターン生
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/syota_oonishi.jpg" alt="" height="200" width="200">
-          <h4>大西 翔太
-            <small>Sota Onishi</small>
-          </h4>
-          <p>
-            北陸先端科学技術大学院大学 修士2年<br>
-            Code for Japanの活動に従事<br>
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/yu_aruga.jpg" alt="" height="200" width="200">
-          <h4>有賀ゆう
-            <small>Yu Aruga</small>
-          </h4>
-          <p>
-            京都女子大4年生<br>
-            グラレコが得意</p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/tatsuya_ikeda.jpg" alt="" height="200" width="200">
-          <h4>池田 達哉
-            <small>Tatsuya Ikeda</small>
-          </h4>
-          <p>
-            学習院大学 法学部 在学<br>
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/ken_watanabe.jpg" alt="" height="200" width="200">
-          <h4>渡辺 賢
-            <small>Masaru Watanabe</small>
-          </h4>
-          <p>
-            名古屋工業大学大学院に在学
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/hyodo_masahiko.jpg" alt="" height="200" width="200">
-          <h4>兵藤 允彦
-            <small>Masahiko Hyodo</small>
-          </h4>
-          <p>
-            ヤフー株式会社 エンジニア<br>
-            Code for Hakodate フェロー
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/yuki_matsuda.jpg" alt="" height="200" width="200">
-          <h4>松田 裕貴
-            <small>Yuki Matsuda</small>
-          </h4>
-          <p>
-            奈良先端科学技術大学院大学 博士2年<br>
-            Code for Ikomaの活動に従事<br>
-            デザインが得意
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/syogo_kawanaka.jpg" alt="" height="200" width="200">
-          <h4>河中 祥吾
-            <small>Shogo Kawanaka</small>
-          </h4>
-          <p>
-            奈良先端科学技術大学院大学 修士2年<br>
-            Code for Ikomaの活動に従事<br>
-            生駒市の給食のオープンデータを用いた「4919」アプリを開発
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/fumiaki_nakao.jpg" alt="" height="200" width="200">
-          <h4>中尾 文亮
-            <small>Humiaki Nakano</small>
-          </h4>
-          <p>
-            大阪大学3年生<br>
-            障害のある人のためのアプリ開発
-          </p>
-        </div>
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="imgs/member/yasuhiro_otoda.jpg" alt="" height="200" width="200">
-          <h4>音田 恭宏
-            <small>Yasuhiro Otoda</small>
-          </h4>
-          <p>
-            奈良先端科学技術大学院大学 修士2年</p>
+    <section id="top" class="welcome d-flex justify-content-center flex-column">
+      <div class="inner-wrapper mt-auto mb-auto container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="welcome-heading display-4 text-white">Seed<br>Nurture<br>Blossom</h1>
+            <p class="text-white">若者と地域が共に成長する社会づくりを</p>
+            <a href="#about" class="btn btn-lg btn-outline-white btn-pill align-self-center">Learn More</a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="my-4">
-            Contact
-          </h1>
-          <p>
-              "Code for Youth"の活動を広めていくにはまだまだ多くの人の力が必要です。<br>
-              私たちの活動に興味のある方は、CodeforYouthのTwitterまたはfacebookからご連絡ください。
-          </p>
-        </div>
-        <div class="col-lg-4">
-        </div>
-        <div class="col-lg-4">
-          <!-- <div style="float: left; margin: 20px;"> -->
-          <center>
-            <a href="https://www.facebook.com/codeforyouth/" target=”_blank><img src="imgs/facebook-3-128.png" class="img-responsive center-block" alt="https://www.facebook.com/codeforyouth/"></a>
-          <!-- </div> -->
-          <!-- <div style="float: left; margin: 20px;"> -->
-            <a href="https://twitter.com/CodeforYouth" target=”_blank><img src="imgs/twitter-3-128.png" class="img-responsive center-block" style="margin: 0 auto;" alt="https://twitter.com/CodeforYouth"></a>
-          <!-- </div> -->
-          <!-- <br clear="both"/> -->
-          </center>
-        </div>
-        </div>
-        <div class="col-lg-4">
-        </div>
-      </div>
-        <!-- Team Members Row -->
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    </section>
+    <section id="about" class="section section-invert gray">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Code for Youth 2017</p>
+      <h3 class="section-title text-center m-5">About</h3>
+      <h5 class="text-center">Code for Youthとは</h5>
+      <p class="text-center">「Code for」とありますが<br class="sp-only">私たちはIT団体ではありません。<br />
+        若者と地域の課題をつなげる立場であり、<br class="sp-only">そのためのツールとしてITを活用しています。<br />
+        また、自らが若者を中心とした<br class="sp-only">発展途上のコミュニティであり、<br />
+        地域課題に挑戦する若者をサポート<br class="sp-only">することで私たち自身も成長していきます。</p>
+      <h5 class="text-center">MISSION</h5>
+      <p class="text-center">
+        Code for Youth は3つの「場」になります。<br>
+        Seed: 熱意ある仲間を見つける場<br>
+        Nurture: 地域・仲間とともに育つ場<br>
+        Blossom: 社会に還元できる場
+      </p>
+        <div class="text-center">
+          <a href="https://goo.gl/uhVmPT"><button type="button" class="btn btn-pill btn-green"> <i class="fab fa-slack"></i> 参加する</button></a>
+        </div>
       </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    </section>
+    <section id="news" class="blog section section-invert py-4">
+      <h3 class="section-title text-center m-5">News</h3>
+      <div class="container">
+        <table class="table table-striped table-responsive-md">
+          <tbody>
+            <tr>
+              <td class="text-center"><a href="https://www.facebook.com/codeforyouth/posts/403934356737250">Code for Youthとしてのプロジェクトへの関わり方について</a></td>
+            </tr>
+            <tr>
+              <td class="text-center"><a href="https://www.facebook.com/codeforyouth/posts/394875734309779">吹田市のマッピングパーティーで協力させていただきました</a></td>
+            </tr>
+            <tr>
+              <td class="text-center"><a href="https://togetter.com/li/1194111">Code for Youthの合宿「Youth MIRAI 合宿」まとめ</a></td>
+            </tr>
+            <tr>
+              <td class="text-center"><a href="https://www.facebook.com/codeforyouth/posts/384015572062462">Youthメンバー河中くんがMashup Awards2017 CivicTech部門賞を受賞</a></td>
+            </tr>
+            <tr>
+              <td class="text-center"><a href="https://goo.gl/kPmQAm">Code for Youth主催RESASワークショップ第2回in大阪レポート</a></td>
+            </tr>
+            <tr>
+              <td class="text-center"><a href="https://www.facebook.com/codeforyouth/posts/367084533755566">出張Youth in 沼津#2 「沼津まちあるきと食べ物」について</a></td>
+            </tr>
+            <tr>
+              <td class="text-center"><a href="https://goo.gl/q5Jp2g">出張Youth in 沼津#1「地域のハブとしての役割と苦労」</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="member" class="section section-invert gray">
+      <h3 class="section-title text-center m-5">Member</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
+              <img src="images/member/saito_takatoshi.jpg" class="w-100" alt="Testimonial Avatar" />
+            </div>
+            <h5 class="mb-1">斎藤 孝俊</h5>
+            <span class="text-muted d-block mb-2">Takatoshi Saito</span>
+            <p>自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section section-invert">
+      <div class="container">
+        <h3 class="section-title text-center m-5">Contact</h3>
+        <div class="text-center">
+          <div class="iframeWrapper">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrRcGV_xAtokevP_btHolPJOIoCfow_uQ6x0psEk3-4D76ng/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="member" class="section section-invert gray">
+      <div class="text-center container">
+        <a href="https://goo.gl/uhVmPT"><button type="button" class="btn btn-pill btn-green"> <i class="fab fa-slack"></i> 参加する</button></a>
+      </div>
+    </section>
+    <!-- Slider main container -->
+    <!-- JavaScript Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script type="text/javascript">
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 30,
+      centeredSlides : true,
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      breakpoints: {
+        767: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      }
+    })
+    </script>
   </body>
-
 </html>
