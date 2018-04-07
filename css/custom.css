@@ -9,6 +9,15 @@
 /* =====================
   Color & Element
 ===================== */
+.brown {
+  color: #C5A16C;
+}
+.pink {
+  color: #EDAFCA;
+}
+.green {
+  color: #9CC45A;
+}
 .young-bamboo-bg {
   background-color: #68be8d;
 }
@@ -55,10 +64,15 @@ section.gray {
 /* =====================
   CCC(Choi Choi Custom)
 ===================== */
+/* header */
+li.nav-item {
+  margin-right: 10px;
+}
+
 /* top */
 section#top {
   position: relative;
-  height: 100vh;
+  height: 95vh;
   min-height: 700px;
   background: url(../images/top-bg.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -73,6 +87,13 @@ section#top::before {
   bottom: 0;
   opacity: .8;
   background: #10732d;
+}
+/* about */
+.misson-wrapper {
+  padding: 15px;
+}
+.mission-image {
+  margin-bottom: 30px;
 }
 /* member */
 section#member {
