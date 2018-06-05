@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500);
 
 /* ---------------------
     - Color & Element
@@ -30,12 +30,22 @@
     background-color: #68be8d;
     box-shadow: none;
 }
+body {
+  font-family: 'Rubik', Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue", Arial, sans-serif;
+}
 p {
-  line-height: 1.875rem;
+  line-height: 2em;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1.1px;
-  font-family: 'Noto Sans JP';
+}
+strong {
+  line-height: 2em;
+  font-size: 1.25rem;
+  letter-spacing: 1.1px;
+}
+img {
+  max-width: 100%;
 }
 /* =====================
   Common part
@@ -88,6 +98,11 @@ section#top::before {
   opacity: .8;
   background: #10732d;
 }
+h1.welcome-heading {
+  font-size: 5.4rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
 /* about */
 .misson-wrapper {
   padding: 15px;
@@ -98,6 +113,10 @@ section#top::before {
 /* member */
 section#member {
   padding-bottom: 1.5rem!important;
+}
+section#member p {
+  line-height: 1.25rem;
+  font-size: 0.8rem;
 }
 .avatar {
   max-width: 80px;
@@ -120,9 +139,23 @@ div.iframeWrapper iframe {
   width: 100%;
   height: 100%;
 }
+/* join */
+#join {
+  height: 90px;
+}
+#join .container {
+  margin-top: 30px;
+  height: 100%;
+}
+
 /* =====================
   Responsive Style
 ===================== */
-@media (400) {
-
+@media screen and (max-width: 480px) {
+/* top */
+h1.welcome-heading {
+  font-size: 4.2rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
 }
