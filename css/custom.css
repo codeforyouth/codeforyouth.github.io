@@ -30,12 +30,14 @@
     background-color: #68be8d;
     box-shadow: none;
 }
+body {
+  font-family: 'Noto Sans JP';
+}
 p {
-  line-height: 1.875rem;
-  font-size: 1.25rem;
+  line-height: 2em;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1.1px;
-  font-family: 'Noto Sans JP';
 }
 /* =====================
   Common part
@@ -99,6 +101,10 @@ section#top::before {
 section#member {
   padding-bottom: 1.5rem!important;
 }
+section#member p {
+  line-height: 1.25rem;
+  font-size: 0.8rem;
+}
 .avatar {
   max-width: 80px;
   overflow: hidden;
@@ -120,9 +126,14 @@ div.iframeWrapper iframe {
   width: 100%;
   height: 100%;
 }
+/* join */
+#join {
+  height: 90px;
+}
+#join .container {
+  margin-top: 30px;
+  height: 100%;
+}
 /* =====================
   Responsive Style
 ===================== */
-@media (400) {
-
-}
